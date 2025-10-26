@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Install a Web Server (Internet Information Service IIS)
 - PHP
-- Item 3
+- Install IIS URL Rewrite Module
 - Item 4
 - Item 5
 
@@ -46,9 +46,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/qeVQvMC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we would install IIS URL Rewrite Module.This mod_rewrite is an Apache web server module used to rewrite URLs. It allows web applications like osTicket to have clean, user-friendly URLs (
+</p>
+<br />    
+<p>
+<img src=".png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>Next is our PHP from our osticket file folder, we would install PHP manager. This is the language osticket understands and run well in.
 </p>
 <br />
