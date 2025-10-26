@@ -61,8 +61,13 @@ Next we would install IIS URL Rewrite Module.This mod_rewrite is an Apache web s
 <p>Next we create a Directory in our Windows C Drive. To do that, we create a new folder and named it C/PHP, and then unzip osticket installation zip files into folder created.
 </p>
 <br />
+<img src="https://imgur.com/jpLENsk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>Next we install VC Redist. THis is just another extention osticket required in order to use.
+</p>
+<br />
 <img src=".png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Next .
+<p>Next we install VC Redist. THis is just another extention osticket required in order to use.
 </p>
 <br />
