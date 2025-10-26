@@ -23,7 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Install a Web Server (Internet Information Service IIS)
-- Item 2
+- PHP
 - Item 3
 - Item 4
 - Item 5
@@ -34,7 +34,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://imgur.com/yvRJsIf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-.
+- First,we install a Internet Information Service (IIS) in our virture machice to run osticket on. In our virture machine we hit the window command start button and select control panel option, double click to open its windowns on/off features. At this point, we activated our IIS and CGI features. Then we use the loop function 127.0.0.1 to default web page, to verify we have a working web server and it should look like the photo above. From here on it is our web browser and user have access to helpdesk system.
 </p>
 <br />
 
