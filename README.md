@@ -66,8 +66,8 @@ Next we would install IIS URL Rewrite Module.This mod_rewrite is an Apache web s
 <p>Next we install VC Redist. THis is just another extention osticket required in order to use.
 </p>
 <br />
-<img src=".png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/w2MAhAU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Next we install VC Redist. THis is just another extention osticket required in order to use.
+<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. All the users account, ticketing information, in the backend.
 </p>
 <br />
