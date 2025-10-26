@@ -25,6 +25,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install a Web Server (Internet Information Service IIS)
 - PHP
 - Install IIS URL Rewrite Module
+- Ceate the directory
 - Install VC redist
 - Install MySQL
 - install HeidiSQL
