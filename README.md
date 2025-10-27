@@ -71,7 +71,7 @@ Next we would install IIS URL Rewrite Module.This mod_rewrite is an Apache web s
 <img src="https://imgur.com/Vihrn7Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/lFXUJNG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. From all the users account, ticketing informations, in the backend. After installing, we launch MYSQL configuration wizards and choose standard configurations. After that, we registered PHP manager within IIS, think of it as making IIS aware of the existing file on the computer. Then we stop and restart the web server. From this point we open the osticket zip file and install osticket
+<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. From all the users account, ticketing informations, in the backend. After installing, we launch MYSQL configuration wizards and choose standard configurations. After that, we registered PHP manager within IIS, think of it as making IIS aware of the existing file on the computer. Then we stop and restart the web server, from this point we open the osticket zip file and install osticket
 </p>
 <br />
 <img src="https://.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
