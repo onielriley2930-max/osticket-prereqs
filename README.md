@@ -71,11 +71,75 @@ Next we would install IIS URL Rewrite Module.This mod_rewrite is an Apache web s
 <img src="https://imgur.com/Vihrn7Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/lFXUJNG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. From all the users account, ticketing informations, in the backend. After installing, we launch MYSQL configuration wizards and choose standard configurations. After that, we registered PHP manager within IIS, think of it as making IIS aware of the existing file on the computer. Then we stop and restart the web server, from this point we open the osticket zip file and install osticket
+<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. From all the users account, ticketing informations, in the backend. After installing, we launch MYSQL configuration wizards and choose standard configurations. After that, we registered PHP manager within IIS, think of it as making IIS aware of the existing file on the computer. Then we stop and restart the web server, from this point we open the osticket zip file and install osticket. 
 </p>
 <br />
-<img src="https://.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/11DLZqG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/d2qCB5L.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/J5FkQlo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Next we install MYSQL.This is our database that osticket use to store all of our data in. All the users account, ticketing information, in the backend. After installing, we launch MYSQL configuration wizards and choose standard configurations.
+<p>Next we install HeidiSQLL. This is just an application that allowed us to make a connection to our database.
 </p>
 <br />
+<img src="https://imgur.com/sXEYyN4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>Finally osticket. Once osTicket is installed and you see the setup page:
+	•	Provide your database credentials (from MySQL or MariaDB).
+	•	Set your Helpdesk Name, Default Email Address, and Admin Account credentials.
+	•	Wait until the installer confirms that the setup is successful.
+
+⚙️ 2. Adjust IIS Configuration
+
+To make osTicket run smoothly:
+	•	Enable URL Rewrite:
+Make sure the IIS URL Rewrite module is installed (it’s similar to mod_rewrite in Apache).
+👉 Download it from Microsoft’s site if missing.
+	•	Set Folder Permissions:
+</p>
+<br />
+🧰 3. Set File & Folder Security
+
+After installation:
+	•	Delete or rename the /setup folder.
+	•	Verify that /include/ost-config.php is read-only (it contains your database credentials).
+  📨 4. Configure Email (SMTP & POP/IMAP)
+
+Email integration is critical for ticket automation:
+	•	Go to Admin Panel → Emails → Settings.
+	•	Add your SMTP outgoing mail (for sending ticket updates).
+	•	Add your IMAP or POP mailboxes (for fetching support emails into tickets).
+	•	Test the connection to ensure it works.
+
+⸻
+
+👥 5. Create Departments, Agents & Help Topics
+
+Organize your helpdesk:
+	•	Departments: e.g., Sales, IT Support, Customer Service
+	•	Agents: Staff members who will respond to tickets
+	•	Help Topics: Ticket categories (like Billing, Technical Issue, General Inquiry)
+
+⸻
+
+🧩 6. Install Essential Plugins (Optional but Recommended)
+
+osTicket plugins improve automation and functionality:
+	•	LDAP/Active Directory Authentication
+	•	HTTP Authentication
+	•	Audit Logs / Reports
+Install from the /include/plugins directory and enable them via the Admin Panel.
+
+⸻
+
+🔒 7. Secure and Optimize
+	•	Use HTTPS (SSL) for secure ticket transmission.
+	•	Set a backup schedule for your database and configuration files.
+	•	Update to the latest osTicket version to patch vulnerabilities.
+	•	Optionally, configure application pool recycling in IIS to keep performance stable.
+
+⸻
+
+✅ 8. Test the System
+	•	Create a test ticket as a user.
+	•	Respond as an agent and verify that emails and status changes work correctly.
+	•	Check URL paths, images, and permissions are functioning properly.
